@@ -1,2 +1,2 @@
 # drc
-dynamic range compressor using c++ from scratch
+dynamic range compressor using c++ JUCE Framework
