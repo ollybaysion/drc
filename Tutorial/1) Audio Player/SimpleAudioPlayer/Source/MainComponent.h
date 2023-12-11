@@ -27,6 +27,20 @@ private:
     //==============================================================================
     // Your private member variables go here...
 
+    enum TransportState
+    {
+        Stopped,
+        Starting,
+        Playing,
+        Stopping
+    };
+
+    juce::TextButton openButton;
+    juce::TextButton playButton;
+    juce::TextButton stopButton;
+
+    int state;
+
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

@@ -1,24 +1,27 @@
 #include "MainComponent.h"
 
 //==============================================================================
-MainComponent::MainComponent()
+MainComponent::MainComponent() : state (Stopped)
 {
-    // Make sure you set the size of the component after
-    // you add any child components.
-    setSize (800, 600);
+    addAndMakeVisible(&openButton);
+    openButton.setButtonText("Open...");
+    // openButton.onClick = [this] { openButtonClicked(); };
 
-    // Some platforms require permissions to open input channels so request that here
-    if (juce::RuntimePermissions::isRequired (juce::RuntimePermissions::recordAudio)
-        && ! juce::RuntimePermissions::isGranted (juce::RuntimePermissions::recordAudio))
-    {
-        juce::RuntimePermissions::request (juce::RuntimePermissions::recordAudio,
-                                           [&] (bool granted) { setAudioChannels (granted ? 2 : 0, 2); });
-    }
-    else
-    {
-        // Specify the number of input and output channels that we want to open
-        setAudioChannels (2, 2);
-    }
+    addAndMakeVisible(&playButton);
+    playButton.setButtonText("Play");
+    // playButton.onClick = [this] { playButtonClicked(); };
+    playButton.setColour(juce::TextButton::buttonColourId, juce::Colours::green);
+    playButton.setEnabled(false);
+
+    addAndMakeVisible(&stopButton);
+    stopButton.setButtonText("Stop");
+    // stopButton.onClick = [this] { stopButtonClicked(); };
+    stopButton.setColour(juce::TextButton::buttonColourId, juce::Colours::red);
+    stopButton.setEnabled(false);
+
+    setSize(300, 200);
+
+    setAudioChannels(0, 2);
 }
 
 MainComponent::~MainComponent()
@@ -69,7 +72,7 @@ void MainComponent::paint (juce::Graphics& g)
 
 void MainComponent::resized()
 {
-    // This is called when the MainContentComponent is resized.
-    // If you add any child components, this is where you should
-    // update their positions.
+    openButton.setBounds(10, 10, getWidth() - 20, 20);
+    playButton.setBounds(10, 40, getWidth() - 20, 20);
+    stopButton.setBounds(10, 70, getWidth() - 20, 20);
 }
