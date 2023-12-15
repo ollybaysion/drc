@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="gGJpH4" name="drc" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="kFTUAS" name="drc">
+    <GROUP id="{A61A349E-4E25-4629-82EE-04EB507917F0}" name="Drawables">
+      <FILE id="rWCnFS" name="power_white.svg" compile="0" resource="1" file="Drawables/power_white.svg"/>
+    </GROUP>
+    <GROUP id="{D4F2DEDE-A866-7F67-A9FD-0DBF5D5958BE}" name="dsp">
+      <GROUP id="{4AA87275-E734-959F-B390-F8C2231FC929}" name="include">
+        <FILE id="Sut0II" name="Compressor.h" compile="0" resource="0" file="Source/dsp/include/Compressor.h"/>
+        <FILE id="utCTrc" name="CrestFactor.h" compile="0" resource="0" file="Source/dsp/include/CrestFactor.h"/>
+        <FILE id="uXFS4U" name="DelayLine.h" compile="0" resource="0" file="Source/dsp/include/DelayLine.h"/>
+        <FILE id="diqwYb" name="EnvelopeFollower.h" compile="0" resource="0"
+              file="Source/dsp/include/EnvelopeFollower.h"/>
+        <FILE id="c0yDAu" name="GainComputer.h" compile="0" resource="0" file="Source/dsp/include/GainComputer.h"/>
+        <FILE id="FoFZtK" name="LevelDetector.h" compile="0" resource="0" file="Source/dsp/include/LevelDetector.h"/>
+        <FILE id="Js7rq4" name="LevelEnvelopeFollower.h" compile="0" resource="0"
+              file="Source/dsp/include/LevelEnvelopeFollower.h"/>
+        <FILE id="A9TXQx" name="LookAhead.h" compile="0" resource="0" file="Source/dsp/include/LookAhead.h"/>
+        <FILE id="WJeWgu" name="SmoothingFilter.h" compile="0" resource="0"
+              file="Source/dsp/include/SmoothingFilter.h"/>
+      </GROUP>
+      <FILE id="GzX69J" name="Compressor.cpp" compile="1" resource="0" file="Source/dsp/Compressor.cpp"/>
+      <FILE id="HctjzW" name="CrestFactor.cpp" compile="1" resource="0" file="Source/dsp/CrestFactor.cpp"/>
+      <FILE id="n7dZtZ" name="DelayLine.cpp" compile="1" resource="0" file="Source/dsp/DelayLine.cpp"/>
+      <FILE id="MPHRdD" name="EnvelopeFollower.cpp" compile="1" resource="0"
+            file="Source/dsp/EnvelopeFollower.cpp"/>
+      <FILE id="Fn37KG" name="GainComputer.cpp" compile="1" resource="0"
+            file="Source/dsp/GainComputer.cpp"/>
+      <FILE id="V5JKA6" name="LevelDetector.cpp" compile="1" resource="0"
+            file="Source/dsp/LevelDetector.cpp"/>
+      <FILE id="Jc2SXW" name="LevelEnvelopeFollower.cpp" compile="1" resource="0"
+            file="Source/dsp/LevelEnvelopeFollower.cpp"/>
+      <FILE id="Eo8ykv" name="LookAhead.cpp" compile="1" resource="0" file="Source/dsp/LookAhead.cpp"/>
+      <FILE id="Elqq08" name="SmoothingFilter.cpp" compile="1" resource="0"
+            file="Source/dsp/SmoothingFilter.cpp"/>
+    </GROUP>
+    <GROUP id="{C0038DF4-9D1E-1CF1-2F5C-80F5E4185560}" name="Fonts">
+      <FILE id="hLmStT" name="Roboto-Bold.ttf" compile="0" resource="1" file="Fonts/Roboto-Bold.ttf"/>
+      <FILE id="XywD4M" name="Roboto-Light.ttf" compile="0" resource="1"
+            file="Fonts/Roboto-Light.ttf"/>
+      <FILE id="yQGucA" name="Roboto-Medium.ttf" compile="0" resource="1"
+            file="Fonts/Roboto-Medium.ttf"/>
+      <FILE id="GglCFY" name="Roboto-Regular.ttf" compile="0" resource="1"
+            file="Fonts/Roboto-Regular.ttf"/>
+    </GROUP>
+    <GROUP id="{E90AB17B-1D13-5C50-DF31-AA4C94086636}" name="gui">
+      <GROUP id="{141D925E-3571-C3B8-DFD0-475E3A7FC56B}" name="include">
+        <FILE id="cs9PCg" name="LabeledSlider.h" compile="0" resource="0" file="Source/gui/include/LabeledSlider.h"/>
+        <FILE id="jZ6Rog" name="Meter.h" compile="0" resource="0" file="Source/gui/include/Meter.h"/>
+        <FILE id="t7wMeH" name="MeterBackground.h" compile="0" resource="0"
+              file="Source/gui/include/MeterBackground.h"/>
+        <FILE id="XNayDs" name="MeterNeedle.h" compile="0" resource="0" file="Source/gui/include/MeterNeedle.h"/>
+        <FILE id="pj6rnq" name="ModSlider.h" compile="0" resource="0" file="Source/gui/include/ModSlider.h"/>
+        <FILE id="PvUUNW" name="SCLookAndFeel.h" compile="0" resource="0" file="Source/gui/include/SCLookAndFeel.h"/>
+      </GROUP>
+      <FILE id="W12mfj" name="Meter.cpp" compile="1" resource="0" file="Source/gui/Meter.cpp"/>
+      <FILE id="r3scUA" name="MeterBackground.cpp" compile="1" resource="0"
+            file="Source/gui/MeterBackground.cpp"/>
+      <FILE id="x8B0fD" name="MeterNeedle.cpp" compile="1" resource="0" file="Source/gui/MeterNeedle.cpp"/>
+    </GROUP>
+    <GROUP id="{0A146C1A-371F-B203-A0DC-AB06874B3F4B}" name="Source">
+      <FILE id="bQqvyi" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="w5gja2" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="ODr45x" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+    <GROUP id="{30029222-E17A-DB4A-D024-D5F83534B5F2}" name="util">
+      <GROUP id="{D2EC5510-3D3F-4A62-98DC-17AC458C5CD1}" name="include">
+        <FILE id="MzzwPh" name="Constants.h" compile="0" resource="0" file="Source/util/include/Constants.h"/>
+        <FILE id="VTqAt8" name="SIMDMath.h" compile="0" resource="0" file="Source/util/include/SIMDMath.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="drc"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="drc"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_dsp" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:\JUCE\modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
